@@ -1,7 +1,13 @@
+# This file splits the larger excel file into small chanks
+# For Example i have a file which if 500,000 rows, 
+# Loading it may be a problem, so i nead to split
+# using this code
+
 import pandas as pd
 
 def split_excel_file(input_file, output_prefix, chunk_size):
-    # Read the Excel file
+
+    # Read the Excel file to be splited
     df = pd.read_excel(input_file)
 
     # Get the number of rows in the dataframe
@@ -25,4 +31,5 @@ def split_excel_file(input_file, output_prefix, chunk_size):
     print("Splitting completed successfully.")
 
 # Example usage
-split_excel_file("dataOne.xlsx", "split", 50000)
+# You only need to change here to the name of your file
+split_excel_file("excel_file.xlsx", "split", 50000)
