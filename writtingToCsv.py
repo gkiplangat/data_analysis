@@ -8,7 +8,7 @@ data = [
 ]
 
 # Specify the file name for the CSV file
-csv_file = "sample_data.csv"
+csv_file = "output_files/csv/sample_data.csv"
 
 # Open the CSV file in write mode
 with open(csv_file, 'w', newline='') as file:
