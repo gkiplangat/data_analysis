@@ -11,7 +11,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Specify the file name for the Excel file
-excel_file = "sample_data.xlsx"
+excel_file = "output_files/excel/sample_data.xlsx"
 
 # Write the DataFrame to the Excel file
 df.to_excel(excel_file, index=False)
